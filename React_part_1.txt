@@ -1,0 +1,278 @@
+**
+remember anytime if u give styling to the css 
+u needs to give like this with:vw and height as vh
+
+.Login{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+1)when u started running as npm start without scripts provided in the dependencices
+it will shown as some error
+
+**
+Flexbox/Grid Compatibility: Ensure that the display and layout properties (display, flex-direction, grid-template-columns)
+ are used correctly according to their intended purpose. For example, grid-template-columns should be used with the display: grid; property, not flex
+
+
+Regarding icons----
+we have the icons exists in the react and also in the material ui
+to import react icons just give command as npm install react-icons
+
+
+for give the css style to the id we do give mention in the css file as #{}
+
+.result-list{
+    width: 100%;
+    height:200px;
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+}
+
+.result-list{
+    width: 100%;
+    height:200px;
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+}
+
+
+.tabular{
+    border: 2px solid ,blue;
+    margin-top: 20px;
+}
+
+tr,th,td{
+    border: 1px solid,red;
+}
+
+
+I was noticed that we have icons in the material and react 
+based upon the requirements we are using that.
+
+
+<hr/> means it prints the line
+
+The margin-bottom CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
+
+Top margin is a CSS property that defines the space between the top edge of an element and its surroundings, such as the browser window or the edge of a container. Its syntax is “margin-top.” In HTML and CSS, a positive value increases the margin, while a negative value reduces it.
+
+
+** overflow-y: scroll;
+    overflow-x: scroll;
+
+these above styles used for creating the scrolling
+
+***
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray
+}
+these above needs to be added for extra feature
+
+
+**To specify table borders in CSS, use the border property.
+
+The example below specifies a solid border for <table>, <th>, and <td> elements:
+
+
+**Whenever we are fetching the data we do insert that into the try catch block so if many errors comes up it will rectify
+
+
+**The first <span> tag applies inline styling to make the text bold.
+The second <span> tag applies a CSS class (highlight) to style the text.
+
+when there is any compatible issues happens just try to match react and material version 
+# Try updating React to a compatible version
+npm install react@17.0.2
+
+# Then try installing @material-ui/icons again
+npm install @material-ui/icons
+
+# OR
+
+# Force installation of @material-ui/icons
+npm install @material-ui/icons --force
+
+# OR
+
+# Install @material-ui/icons with legacy peer dependencies
+npm install @material-ui/icons --legacy-peer-deps
+
+
+
+for cleaning the npm cache we can do like below
+npm cache clean --force
+npm install
+
+
+margin-auto___
+
+The CSS property margin: 0 auto; is a shorthand for setting the top and bottom margins to 0 and the left and right margins to auto. This is commonly used to horizontally center an element within its container.
+
+Here's what each part of margin: 0 auto; means:
+
+margin-top and margin-bottom: Set to 0, meaning there will be no margin above or below the element.
+margin-left and margin-right: Set to auto, meaning the browser will automatically calculate and evenly distribute the available space on the left and right sides of the element, effectively centering it horizontally within its container.
+So, when you apply margin: 0 auto; to an element, it will be horizontally centered within its container while having no margin on top and bottom.
+
+margin-bottom__
+
+The CSS rule .text { margin-bottom: 20px; } will add a margin of 20 pixels below the <div> element with the class "text", creating space between it and the content below it.
+This means that there will be 20 pixels of space below the element, pushing any content below it further down.
+
+
+display: flex;: This property is used to define a flex container. Elements with this class will become flex containers, and their children will become flex items.
+
+justify-content: center;: This property aligns flex items along the main axis of the flex container. In this case, it centers the flex items horizontally within the flex container.
+
+align-items: center;: This property aligns flex items along the cross axis of the flex container. In this case, it centers the flex items vertically within the flex container.
+
+
+max-width: 100%;: This property ensures that the image will never exceed the width of its container. It prevents the image from overflowing its container and maintains responsiveness.
+
+height: auto;: This property ensures that the image maintains its aspect ratio while resizing. Setting height to auto allows the browser to automatically adjust the height of the image proportionally to its width.
+
+margin: 0 20px;: This property sets the margin for the <img> elements. It applies a margin of 0 (no margin) to the top and bottom of the image and 20px to the left and right. The shorthand margin: 0 20px; is equivalent to margin-top: 0; margin-right: 20px; margin-bottom: 0; margin-left: 20px;. This adds spacing of 20px on the left and right sides of the image, providing some breathing room between the image and other elements on its left and right sides.
+
+
+***we can directly insert the image URLS and can execute
+
+***commonly 403 forbidden error will comesup when there is no permission to that user
+
+everytime note it reducer needs to be export by default
+
+**remember useSelector and useDispatch are exists in the react-redux
+
+set is used for including only unique ids
+
+
+
+Using useContext in React projects can be incredibly powerful for managing global state and sharing data between components without prop drilling. Here are a few project ideas where you can leverage useContext:
+
+Theme Switcher: Create a theme switcher app where users can toggle between light and dark themes. Use useContext to manage the theme state globally and update the theme throughout the app when it changes.
+
+User Authentication: Build a user authentication system where users can sign in, sign up, and view their profile. Use useContext to manage the authentication state and share user information across different parts of the app.
+
+Shopping Cart: Develop an e-commerce app with a shopping cart feature. Use useContext to manage the cart state globally and update the cart items as users add or remove products.
+
+Language Switcher: Create a multilingual app where users can switch between different languages. Use useContext to manage the selected language globally and update the app's content based on the selected language.
+
+Todo List: Build a todo list app where users can add, edit, and delete tasks. Use useContext to manage the todo list state globally and synchronize changes across different components.
+
+Real-Time Chat: Develop a real-time chat app where users can send and receive messages. Use useContext to manage the chat state globally and update the message list in real-time.
+
+
+***By using useContext 
+we can able to accept 
+Managing WebSocket Connections: If your chat app uses WebSockets for real-time communication, you can use useContext to manage the WebSocket connection state (e.g., connecting, connected, disconnected). Components can consume this context to subscribe to real-time updates, send messages, etc.
+
+
+
+***Higher Order Components (HOCs) are a powerful pattern in React for code reuse and logic sharing among components. Essentially, a Higher Order Component is a function that takes a component and returns a new component with additional functionality.
+
+Here's a breakdown of how they work:
+
+Function that takes a component: A Higher Order Component is a function that accepts a component as an argument.
+
+Adds additional functionality: Inside the HOC, you can add new props, state, or behavior to the original component.
+
+Returns a new component: The HOC then returns a new component that includes the enhancements made within the function.
+
+
+***if we wants any box to be show shadow we can navigate to the css box shadow generator and select the box shadow in the "https://html-css-js.com/css/generator/box-shadow/"
+
+
+**we can able to iterate the array only if there are such elements are we needs to convert into array
+const newData = { username, password, selectedRole };
+    setSubmittedData([...submittedData, newData]);
+
+
+
+***to authenticate the sign in of any react project we do use
+firebase configuration
+
+go the website firebox.com
+Create a Firebase Project:
+
+Go to the Firebase Console (https://console.firebase.google.com/).
+Click on "Add project" and follow the prompts to create a new Firebase project.
+Once the project is created, you'll be redirected to the project dashboard.
+Get Firebase Configuration:
+
+In the Firebase project dashboard, click on the gear icon (settings) next to "Project Overview" and select "Project settings".
+In the "General" tab, scroll down to the "Your apps" section and click on the "Web" icon (</>) to register a new web app.
+Give your app a nickname (optional) and click on "Register app".
+Firebase will generate a configuration object containing the necessary API keys and other credentials for your app.
+
+***
+
+ChatGPT
+The textarea tag in React, just like in HTML, is used to create a multi-line text input control where users can input multiple lines of text. It's particularly useful when you need to allow users to input longer text, such as in forms or text editing applications.
+
+In React, the textarea element is a self-closing tag similar to other HTML elements. You can use it in your JSX code just like any other HTML element, providing attributes like value, onChange, placeholder, and styling properties.
+
+
+
+***
+The -webkit-scrollbar is a CSS pseudo-element that allows you to customize the appearance of scrollbars in web browsers that use the WebKit rendering engine, such as Safari and older versions of Chrome.
+
+With this pseudo-element, you can style various aspects of the scrollbar, including its width, color, and track (the area where the scrollbar moves). This allows web developers to create custom scrollbar designs that better fit their website's aesthetic or design language.
+
+Here's an example of how you might use -webkit-scrollbar in your CSS:
+
+
+***
+In CSS, vertical-align: middle is a property used to vertically align inline or inline-block elements within their parent container.
+
+When you set vertical-align: middle on an element, it aligns the element relative to the middle of the line height of its parent container. This means that the vertical midpoint of the element will be aligned with the vertical midpoint of the line box that contains it.
+
+It's important to note that the behavior of vertical-align: middle can vary depending on the context in which it's used and the display type of the elements involved. For example, it works differently on inline elements, inline-block elements, and table cells.
+
+Here's a simple example of how you might use vertical-align: middle:
+
+**remember in ur mind import {Posts} from '../../dummyData' this is getting out of the two folder so that's why given the ../../
+
+
+
+***Server-Side Rendering (optional): Implement server-side rendering (SSR) using libraries like Next.js to improve performance and SEO.
+
+
+**filter method is used for when we do search anything specific it gives that only
+
+**in redux toolkit we can directly store  reducers in the store by creating createSlice()
+
+**when user do fetches the data it will not be performed by normal user so for fetching data from API we do add the extraReducers{()=>{}
+
+
+**instead of writing json as for fetch we can directly put await for that and for function as async
+
+**createAsyncThunk is takes two arguments and note it when u dispatch the action creator function createAsyncthunk it will works to call APi
+
+***we can give setTimeout function for giving the load time 
+const fetchDataTimeout = setTimeout(() => {
+      setIsLoading(false); // After 3 seconds, set isLoading to false
+      dispatch(fetchUse());
+    }, 5000); // 3000 milliseconds = 3 seconds
+
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(fetchDataTimeout);
+
